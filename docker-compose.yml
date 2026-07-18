@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: explainable-recommender-app
+    env_file:
+      - .env
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./:/workspace
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import requests, sys; sys.exit(0 if requests.get('http://localhost:8000/health').status_code==200 else 1)\""]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    command: ["sh", "-c", "uvicorn src.api:app --host 0.0.0.0 --port 8000"]

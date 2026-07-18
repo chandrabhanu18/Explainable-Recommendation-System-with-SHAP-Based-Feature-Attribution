@@ -1,0 +1,33 @@
+{
+  "user_id": 1,
+  "item_id": 1,
+  "recommendation_score": 7.459784456093731,
+  "top_contributors": [
+    {
+      "item_id": 527,
+      "item_name": "Schindler's List (1993)",
+      "shap_value": 0.434064208243962
+    },
+    {
+      "item_id": 1,
+      "item_name": "Toy Story (1995)",
+      "shap_value": 0.4257046384187798
+    },
+    {
+      "item_id": 1035,
+      "item_name": "Sound of Music, The (1965)",
+      "shap_value": 0.3764394807298277
+    },
+    {
+      "item_id": 1270,
+      "item_name": "Back to the Future (1985)",
+      "shap_value": 0.3414172067413979
+    },
+    {
+      "item_id": 919,
+      "item_name": "Wizard of Oz, The (1939)",
+      "shap_value": 0.33214942695277433
+    }
+  ],
+  "human_readable_explanation": "We recommend item 1 because you interacted with Schindler's List (1993), Toy Story (1995), Sound of Music, The (1965), Back to the Future (1985), Wizard of Oz, The (1939)."
+}
